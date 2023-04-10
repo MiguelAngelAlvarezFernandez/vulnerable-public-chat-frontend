@@ -2,11 +2,11 @@ import { useState } from "react"
 
 function Users() {
 
-    const [users, setusers] = useState ([])
+  const [users, setusers] = useState ([])
 
-    function manejadorClick () {
-    fetch("https://vulnerable-public-chat-staging.up.railway.app/users/")
-    .then(manejadorRespuesta).catch(manejadorError)
+  function manejadorClick () {
+  fetch("https://vulnerable-public-chat-staging.up.railway.app/users/")
+  .then(manejadorRespuesta).catch(manejadorError)
   }
 
   function manejadorRespuesta (respuesta) {
